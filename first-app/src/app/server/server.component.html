@@ -1,1 +1,3 @@
-<h5>Server component user id {{uId}} is {{getServerState()}}</h5>
+<h5 [ngStyle] = "{backgroundColor: getColor()}" 
+    [ngClass] = "{online : serverState === 'online'}">
+    Server component user id {{uId}} is {{getServerState()}}</h5>
